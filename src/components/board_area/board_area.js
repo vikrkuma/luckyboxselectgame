@@ -41,8 +41,7 @@ template.innerHTML =
         ". . . . . .";
     }
   </style>
-  <div class="board-grid">
-  </div>
+  <div class="board-grid"></div>
   `;
 
 const UNSPECIFIED_BOARD_AREA_SIZE_ERROR =

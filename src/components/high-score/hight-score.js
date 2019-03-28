@@ -1,10 +1,5 @@
 const template = document.createElement('template');
-template.innerHTML =
-  `
-  <style>
-  </style>
-  <p class="high-score"></p>
-  `;
+template.innerHTML = `<p class="high-score"></p>`;
 
 class HighScore extends HTMLElement {
   constructor() {
@@ -22,11 +17,8 @@ class HighScore extends HTMLElement {
       const localScore = window.localStorage.getItem('highest-score');
       this.highestScore = localScore || 0;
     }
-
     if (score > this.highestScore) this.highestScore = score;
-
     this.highScoreNode.innerText = `Highest Score: ${this.highestScore}`;
-
     window.localStorage.setItem('highest-score', this.highestScore);
   }
 }

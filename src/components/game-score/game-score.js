@@ -28,11 +28,8 @@ class GameScore extends HTMLElement {
     if (!this.scoreNode) return;
 
     if (score < 0) score = 0;
-
     this.scoreNode.innerText = `Score: ${score}`;
-
     this.dispatchEvent(new CustomEvent('change', { detail: score }));
-
     this._score = score;
   }
 
