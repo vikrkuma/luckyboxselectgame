@@ -1,0 +1,28 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 64px 1fr 64px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+
+  > * {
+    margin-right: 16px;
+  }
+}
+
+
